@@ -1,0 +1,220 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/media/sf_FPGA_Projects/SDRAM/simulation
+valtera_merlin_master_translator
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 !s100 @4:_j021kRIAE0da=nl8h3
+Z3 IgZOL3G@`cVVKR=41L9>3X0
+Z4 V0KIH7<bW[IFhHJBzB4US?0
+Z5 !s105 altera_merlin_master_translator_sv_unit
+S1
+Z6 d/media/sf_FPGA_Projects/SDRAM/simulation
+Z7 w1551492790
+Z8 8../qsys/sdram_system/simulation/submodules/altera_merlin_master_translator.sv
+Z9 F../qsys/sdram_system/simulation/submodules/altera_merlin_master_translator.sv
+L0 30
+Z10 OV;L;10.1d;51
+r1
+31
+Z11 !s90 -reportprogress|300|-sv|-work|rtl_work|../qsys/sdram_system/simulation/submodules/altera_merlin_master_translator.sv|
+Z12 o-sv -work rtl_work -O0
+Z13 !s108 1555219867.791282
+Z14 !s107 ../qsys/sdram_system/simulation/submodules/altera_merlin_master_translator.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_slave_translator
+R1
+Z15 !s100 XcHT>E]8=V]6Y7T<j55[80
+Z16 IEX4GIefNDQDEA`3`fkVji1
+Z17 VA6G6lglY;QOHbkKlTEAXC0
+Z18 !s105 altera_merlin_slave_translator_sv_unit
+S1
+R6
+R7
+Z19 8../qsys/sdram_system/simulation/submodules/altera_merlin_slave_translator.sv
+Z20 F../qsys/sdram_system/simulation/submodules/altera_merlin_slave_translator.sv
+L0 35
+R10
+r1
+31
+Z21 !s90 -reportprogress|300|-sv|-work|rtl_work|../qsys/sdram_system/simulation/submodules/altera_merlin_slave_translator.sv|
+R12
+Z22 !s108 1555219867.656323
+Z23 !s107 ../qsys/sdram_system/simulation/submodules/altera_merlin_slave_translator.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_reset_controller
+Z24 !s100 6a?SGYUMool8LC[CmjWFc0
+Z25 IHY5z6YNXahFiH4MEA5XLK1
+Z26 VBWWT<i0A@QcN4KE]hBS<V0
+R6
+R7
+Z27 8../qsys/sdram_system/simulation/submodules/altera_reset_controller.v
+Z28 F../qsys/sdram_system/simulation/submodules/altera_reset_controller.v
+L0 29
+R10
+r1
+31
+Z29 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../qsys/sdram_system/simulation/submodules/altera_reset_controller.v|
+Z30 o-vlog01compat -work rtl_work -O0
+Z31 !s108 1555219867.436746
+Z32 !s107 ../qsys/sdram_system/simulation/submodules/altera_reset_controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_reset_synchronizer
+Z33 !s100 8f<GfdCQRD_l`;o;2RKhf2
+Z34 I[?FiPlo<hIT_^T@U2[[Cl2
+Z35 V3CjoOZCIEdzCJgPn8]D7`2
+R6
+Z36 w1552678383
+Z37 8../qsys/sdram_system/simulation/submodules/altera_reset_synchronizer.v
+Z38 F../qsys/sdram_system/simulation/submodules/altera_reset_synchronizer.v
+L0 24
+R10
+r1
+31
+Z39 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../qsys/sdram_system/simulation/submodules/altera_reset_synchronizer.v|
+R30
+Z40 !s108 1555219867.314108
+Z41 !s107 ../qsys/sdram_system/simulation/submodules/altera_reset_synchronizer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_sdram_partner_module
+Z42 !s100 DLMLE8=K5oGm39^NIYD9;1
+Z43 IR=GeXdhILXi^4EPZE6OAR0
+Z44 VLAMB16b8JFoBHbW098nnP0
+R6
+Z45 w1555722510
+Z46 8../rtl/altera_sdram_partner_module.v
+Z47 F../rtl/altera_sdram_partner_module.v
+L0 21
+R10
+r1
+31
+Z48 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../rtl/altera_sdram_partner_module.v|
+R30
+Z49 !s108 1556425653.111742
+Z50 !s107 ../rtl/altera_sdram_partner_module.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsdram_system
+Z51 !s100 hXk@V<0M5D8HOhc::FaXO0
+Z52 INXGP`>h=<:_GSJ4eaWeJB2
+Z53 VSgFcRlQLE4XmX1c0Pc7?L3
+R6
+Z54 w1554609596
+Z55 8../qsys/sdram_system/simulation/sdram_system.v
+Z56 F../qsys/sdram_system/simulation/sdram_system.v
+L0 6
+R10
+r1
+31
+Z57 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../qsys/sdram_system/simulation/sdram_system.v|
+R30
+Z58 !s108 1555219867.547584
+Z59 !s107 ../qsys/sdram_system/simulation/sdram_system.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsdram_system_bridge_0
+Z60 !s100 g9an[m=hS;S<0FGh5f0o`0
+Z61 IHXJ0gnU6nGkQT5;=810If0
+Z62 V9L:8H6BBH:OTVbe9;coOO3
+R6
+R7
+Z63 8../qsys/sdram_system/simulation/submodules/sdram_system_bridge_0.v
+Z64 F../qsys/sdram_system/simulation/submodules/sdram_system_bridge_0.v
+L0 49
+R10
+r1
+31
+Z65 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../qsys/sdram_system/simulation/submodules/sdram_system_bridge_0.v|
+R30
+Z66 !s108 1555219867.183966
+Z67 !s107 ../qsys/sdram_system/simulation/submodules/sdram_system_bridge_0.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsdram_system_new_sdram_controller_0
+Z68 !s100 ciNOAIVGo;3EDF[foR8@I2
+Z69 I1B<Fzj9f?44S_[j7lPF=>3
+Z70 VASmD2[@b8efEYgz083dVm3
+R6
+Z71 w1555724169
+Z72 8../rtl/sdram_system_new_sdram_controller_0.v
+Z73 F../rtl/sdram_system_new_sdram_controller_0.v
+Z74 L0 160
+R10
+r1
+31
+Z75 !s108 1556425653.338162
+Z76 !s107 ../rtl/sdram_system_new_sdram_controller_0.v|
+Z77 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../rtl/sdram_system_new_sdram_controller_0.v|
+R30
+!i10b 1
+!s85 0
+!s101 -O0
+vsdram_system_new_sdram_controller_0_input_efifo_module
+Z78 !s100 kQI@6oMecm<K8@TOidli]0
+Z79 IOJ`A7eB0;TLZNmQ?iT>Uh2
+Z80 VI9gfhJm7ES;9UkLXOFLR;0
+R6
+R71
+R72
+R73
+L0 21
+R10
+r1
+31
+R75
+R76
+R77
+R30
+!i10b 1
+!s85 0
+!s101 -O0
+vsdram_system_up_clocks_0
+Z81 !s100 Al[ZBO=OHN52ZIe^nLHd=0
+Z82 Ih3maKARi_Sf;?CInS:CEn1
+Z83 ViY1J84LZhOT0PFH8DZ6c60
+R6
+Z84 w1555723150
+Z85 8../rtl/sdram_system_up_clocks_0.v
+Z86 F../rtl/sdram_system_up_clocks_0.v
+L0 48
+R10
+r1
+31
+Z87 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../rtl/sdram_system_up_clocks_0.v|
+R30
+!i10b 1
+!s85 0
+Z88 !s108 1556425653.536622
+Z89 !s107 ../rtl/sdram_system_up_clocks_0.v|
+!s101 -O0
+vtestbench_top
+!i10b 1
+Z90 !s100 ^fd<;`4BUmRH_[1F:H:SE3
+Z91 I:PmQljflINNgkEMU[]m_z0
+Z92 V<2E8UnRl_M9?W9=EhO0:_0
+R6
+Z93 w1555821272
+Z94 8../rtl/testbench_top.v
+Z95 F../rtl/testbench_top.v
+L0 3
+R10
+r1
+!s85 0
+31
+!s108 1556425653.674674
+!s107 ../rtl/testbench_top.v|
+Z96 !s90 -reportprogress|300|-vlog01compat|-work|rtl_work|../rtl/testbench_top.v|
+!s101 -O0
+R30

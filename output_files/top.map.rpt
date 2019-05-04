@@ -1,0 +1,303 @@
+Analysis & Synthesis report for top
+Fri May  3 18:01:29 2019
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Fri May  3 18:01:29 2019               ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; top                                             ;
+; Top-level Entity Name              ; top                                             ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C20F484C7       ;                    ;
+; Top-level entity name                                                      ; top                ; top                ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri May  3 18:01:27 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SDRAM -c top
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Error (10170): Verilog HDL syntax error at top.v(2) near text ";";  expecting ")" File: /media/sf_FPGA_Projects/SDRAM/rtl/top.v Line: 2
+Error (10112): Ignored design unit "top" at top.v(1) due to previous errors File: /media/sf_FPGA_Projects/SDRAM/rtl/top.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file rtl/top.v
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/testbench_top.v
+    Info (12023): Found entity 1: testbench_top
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sdram_system_up_clocks_0.v
+    Info (12023): Found entity 1: sdram_system_up_clocks_0
+Info (12021): Found 2 design units, including 2 entities, in source file rtl/sdram_system_new_sdram_controller_0.v
+    Info (12023): Found entity 1: sdram_system_new_sdram_controller_0_input_efifo_module
+    Info (12023): Found entity 2: sdram_system_new_sdram_controller_0
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/altera_sdram_partner_module.v
+    Info (12023): Found entity 1: altera_sdram_partner_module
+Warning (10261): Verilog HDL Event Control warning at altera_mf.v(4982): Event Control contains a complex event expression
+Warning (10261): Verilog HDL Event Control warning at altera_mf.v(5017): Event Control contains a complex event expression
+Warning (12018): Entity "lcell" will be ignored because it conflicts with Quartus II primitive name
+Warning (12090): Entity "altpll" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altlvds_rx" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altlvds_tx" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "dcfifo_mixed_widths" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "dcfifo" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altaccumulate" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altmult_accum" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altmult_add" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altfp_mult" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altsqrt" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altclklock" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altddio_in" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altddio_out" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altddio_bidir" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altdpram" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altsyncram" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt3pram" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "parallel_add" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "scfifo" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altshift_taps" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "a_graycounter" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altsquare" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altera_std_synchronizer" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altera_std_synchronizer_bundle" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_cal" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_cal_mm" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_cal_c3gxb" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_cal_sv" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_cal_av" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_aeq_s4" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_eyemon" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "alt_dfe" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "sld_virtual_jtag" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "sld_signaltap" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altstratixii_oct" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altparallel_flash_loader" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altserial_flash_loader" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "sld_virtual_jtag_basic" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Warning (12090): Entity "altsource_probe" obtained from "rtl/altera_mf.v" instead of from Quartus II megafunction library
+Info (12021): Found 86 design units, including 86 entities, in source file rtl/altera_mf.v
+    Info (12023): Found entity 1: ALTERA_MF_MEMORY_INITIALIZATION
+    Info (12023): Found entity 2: ALTERA_MF_HINT_EVALUATION
+    Info (12023): Found entity 3: ALTERA_DEVICE_FAMILIES
+    Info (12023): Found entity 4: dffp
+    Info (12023): Found entity 5: pll_iobuf
+    Info (12023): Found entity 6: stx_m_cntr
+    Info (12023): Found entity 7: stx_n_cntr
+    Info (12023): Found entity 8: stx_scale_cntr
+    Info (12023): Found entity 9: MF_pll_reg
+    Info (12023): Found entity 10: MF_stratix_pll
+    Info (12023): Found entity 11: arm_m_cntr
+    Info (12023): Found entity 12: arm_n_cntr
+    Info (12023): Found entity 13: arm_scale_cntr
+    Info (12023): Found entity 14: MF_stratixii_pll
+    Info (12023): Found entity 15: ttn_m_cntr
+    Info (12023): Found entity 16: ttn_n_cntr
+    Info (12023): Found entity 17: ttn_scale_cntr
+    Info (12023): Found entity 18: MF_stratixiii_pll
+    Info (12023): Found entity 19: cda_m_cntr
+    Info (12023): Found entity 20: cda_n_cntr
+    Info (12023): Found entity 21: cda_scale_cntr
+    Info (12023): Found entity 22: MF_cycloneiii_pll
+    Info (12023): Found entity 23: MF_cycloneiiigl_m_cntr
+    Info (12023): Found entity 24: MF_cycloneiiigl_n_cntr
+    Info (12023): Found entity 25: MF_cycloneiiigl_scale_cntr
+    Info (12023): Found entity 26: cycloneiiigl_post_divider
+    Info (12023): Found entity 27: MF_cycloneiiigl_pll
+    Info (12023): Found entity 28: altpll
+    Info (12023): Found entity 29: altlvds_rx
+    Info (12023): Found entity 30: stratix_lvds_rx
+    Info (12023): Found entity 31: stratixgx_dpa_lvds_rx
+    Info (12023): Found entity 32: stratixii_lvds_rx
+    Info (12023): Found entity 33: flexible_lvds_rx
+    Info (12023): Found entity 34: stratixiii_lvds_rx
+    Info (12023): Found entity 35: stratixiii_lvds_rx_channel
+    Info (12023): Found entity 36: stratixiii_lvds_rx_dpa
+    Info (12023): Found entity 37: altlvds_tx
+    Info (12023): Found entity 38: stratixv_local_clk_divider
+    Info (12023): Found entity 39: stratix_tx_outclk
+    Info (12023): Found entity 40: stratixii_tx_outclk
+    Info (12023): Found entity 41: flexible_lvds_tx
+    Info (12023): Found entity 42: dcfifo_dffpipe
+    Info (12023): Found entity 43: dcfifo_fefifo
+    Info (12023): Found entity 44: dcfifo_async
+    Info (12023): Found entity 45: dcfifo_sync
+    Info (12023): Found entity 46: dcfifo_low_latency
+    Info (12023): Found entity 47: dcfifo_mixed_widths
+    Info (12023): Found entity 48: dcfifo
+    Info (12023): Found entity 49: altaccumulate
+    Info (12023): Found entity 50: altmult_accum
+    Info (12023): Found entity 51: altmult_add
+    Info (12023): Found entity 52: altfp_mult
+    Info (12023): Found entity 53: altsqrt
+    Info (12023): Found entity 54: altclklock
+    Info (12023): Found entity 55: altddio_in
+    Info (12023): Found entity 56: altddio_out
+    Info (12023): Found entity 57: altddio_bidir
+    Info (12023): Found entity 58: altdpram
+    Info (12023): Found entity 59: altsyncram
+    Info (12023): Found entity 60: alt3pram
+    Info (12023): Found entity 61: parallel_add
+    Info (12023): Found entity 62: scfifo
+    Info (12023): Found entity 63: altshift_taps
+    Info (12023): Found entity 64: a_graycounter
+    Info (12023): Found entity 65: altsquare
+    Info (12023): Found entity 66: altera_std_synchronizer
+    Info (12023): Found entity 67: altera_std_synchronizer_bundle
+    Info (12023): Found entity 68: alt_cal
+    Info (12023): Found entity 69: alt_cal_mm
+    Info (12023): Found entity 70: alt_cal_c3gxb
+    Info (12023): Found entity 71: alt_cal_sv
+    Info (12023): Found entity 72: alt_cal_av
+    Info (12023): Found entity 73: alt_aeq_s4
+    Info (12023): Found entity 74: alt_eyemon
+    Info (12023): Found entity 75: alt_dfe
+    Info (12023): Found entity 76: signal_gen
+    Info (12023): Found entity 77: jtag_tap_controller
+    Info (12023): Found entity 78: dummy_hub
+    Info (12023): Found entity 79: sld_virtual_jtag
+    Info (12023): Found entity 80: sld_signaltap
+    Info (12023): Found entity 81: altstratixii_oct
+    Info (12023): Found entity 82: altparallel_flash_loader
+    Info (12023): Found entity 83: altserial_flash_loader
+    Info (12023): Found entity 84: sld_virtual_jtag_basic
+    Info (12023): Found entity 85: altsource_probe
+Info (144001): Generated suppressed messages file /media/sf_FPGA_Projects/SDRAM/output_files/top.map.smsg
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 2 errors, 43 warnings
+    Error: Peak virtual memory: 345 megabytes
+    Error: Processing ended: Fri May  3 18:01:29 2019
+    Error: Elapsed time: 00:00:02
+    Error: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /media/sf_FPGA_Projects/SDRAM/output_files/top.map.smsg.
+
+

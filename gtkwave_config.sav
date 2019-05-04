@@ -1,0 +1,16 @@
+[timestart] 201505000
+[size] 1920 1004
+[pos] -1 -27
+*-17.934601 202934000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench_top.
+@28
+testbench_top.CLOCK_50[0]
+testbench_top.valid_o[0]
+@24
+testbench_top.data_o[15:0]
+@29
+testbench_top.rd_n_i[0]
+@22
+testbench_top.address_i[21:0]
+[pattern_trace] 1
+[pattern_trace] 0

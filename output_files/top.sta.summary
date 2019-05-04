@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 13.399
+TNS   : 0.000
+
+Type  : Slow Model Hold 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 15.962
+TNS   : 0.000
+
+Type  : Slow Model Removal 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 1.429
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 8.889
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 10.000
+TNS   : 0.000
+
+Type  : Fast Model Setup 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 17.301
+TNS   : 0.000
+
+Type  : Fast Model Hold 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 18.086
+TNS   : 0.000
+
+Type  : Fast Model Removal 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 0.680
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'u0|up_clocks_0|DE_Clock_Generator_System|pll|clk[1]'
+Slack : 9.000
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 10.000
+TNS   : 0.000
+
+------------------------------------------------------------

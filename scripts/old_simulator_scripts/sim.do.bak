@@ -1,0 +1,23 @@
+vlib rtl_work
+
+vlog -vlog01compat -work rtl_work ../qsys/sdram_system/simulation/submodules/sdram_system_up_clocks_0.v
+vlog -vlog01compat -work rtl_work ../qsys/sdram_system/simulation/submodules/sdram_system_new_sdram_controller_0.v
+vlog -vlog01compat -work rtl_work ../qsys/sdram_system/simulation/submodules/sdram_system_bridge_0.v
+vlog -vlog01compat -work rtl_work ../qsys/sdram_system/simulation/submodules/altera_reset_synchronizer.v
+vlog -vlog01compat -work rtl_work ../qsys/sdram_system/simulation/submodules/altera_reset_controller.v
+vlog -vlog01compat -work rtl_work ../qsys/sdram_system/simulation/sdram_system.v
+vlog -sv -work rtl_work ../qsys/sdram_system/simulation/submodules/altera_merlin_slave_translator.sv
+vlog -sv -work rtl_work ../qsys/sdram_system/simulation/submodules/altera_merlin_master_translator.sv
+vlog -sv -work rtl_work ../qsys/sdram_system/testbench/sdram_system_tb/simulation/submodules/altera_sdram_partner_module.v
+vlog -vlog01compat -work rtl_work ../rtl/testbench_top.v
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -voptargs="+acc" rtl_work.testbench_top
+
+log -r *
+add wave *
+add wave -position insertpoint sim:/testbench_top/u0/new_sdram_controller_0/the_sdram_system_new_sdram_controller_0_input_efifo_module/entries
+add wave -position insertpoint sim:/testbench_top/u0/new_sdram_controller_0/the_sdram_system_new_sdram_controller_0_input_efifo_module/entry_0
+add wave -position insertpoint sim:/testbench_top/u0/new_sdram_controller_0/za_waitrequest
+view structure
+view signals
+run 10ns
