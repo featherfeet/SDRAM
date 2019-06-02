@@ -18,11 +18,11 @@ module testbench_top();
     wire DRAM_WE_N;
 
 	sdram_system_up_clocks_0 up_clocks_0 (
-		.CLOCK_50    (CLOCK_50),                        //       clk_in_primary.clk
-		.reset       (~KEY[0]), // clk_in_primary_reset.reset
-		.sys_clk     (),                               //              sys_clk.clk
-		.sys_reset_n (),                               //        sys_clk_reset.reset_n
-		.SDRAM_CLK   (SDRAM_CLK)       //            sdram_clk.clk
+		.CLOCK_50    (CLOCK_50),                       // clk_in_primary.clk
+		.reset       (~KEY[0]),                        // clk_in_primary_reset.reset
+		.sys_clk     (),                               // sys_clk.clk
+		.sys_reset_n (),                               // sys_clk_reset.reset_n
+		.SDRAM_CLK   (SDRAM_CLK)                       // sdram_clk.clk
 	);
 
     altera_sdram_partner_module sdram_module (
@@ -75,6 +75,10 @@ module testbench_top();
         input[15:0] data;
         begin
             $display("Starting write of data %d to address %d at time %t...", data, address, $time);
+            while (waitrequest_o)
+            begin
+                @(posedge CLOCK_50);
+            end
             address_i = address;
             be_n_i = 'b00;
             cs_i = 'b1;
@@ -82,7 +86,13 @@ module testbench_top();
             wr_n_i = 'b0;
             @(posedge CLOCK_50);
             wr_n_i = 'b1;
+            /*
             repeat (6)
+            begin
+                @(posedge CLOCK_50);
+            end
+            */
+            while (waitrequest_o)
             begin
                 @(posedge CLOCK_50);
             end
